@@ -13,15 +13,10 @@ class CategoryCell: UITableViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    func updateViews(category: Category) {
         
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        
+        categoryImage.image = UIImage(named: category.imageName)
+        categoryTitle.text = category.title
     }
 
 }

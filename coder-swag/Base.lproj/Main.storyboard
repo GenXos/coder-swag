@@ -32,21 +32,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="abw-nv-d5q">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="abw-nv-d5q">
                                 <rect key="frame" x="0.0" y="68.5" width="375" height="534.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="ePS-Ng-AsP" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="144" id="ePS-Ng-AsP" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ePS-Ng-AsP" id="NI8-dV-p8K">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ePS-Ng-AsP" id="NI8-dV-p8K">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="iv8-6M-ELZ">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="shirts" translatesAutoresizingMaskIntoConstraints="NO" id="iv8-6M-ELZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="143.5" id="TLT-ZX-0Ot"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-qC-L3i">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SHIRTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXK-qC-L3i">
                                                     <rect key="frame" x="109" y="57" width="156" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="4fu-NB-O48"/>
@@ -59,10 +62,10 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="iv8-6M-ELZ" secondAttribute="trailing" id="HlE-EY-wlJ"/>
-                                                <constraint firstAttribute="bottom" secondItem="iv8-6M-ELZ" secondAttribute="bottom" id="K5I-F5-357"/>
+                                                <constraint firstAttribute="bottom" secondItem="iv8-6M-ELZ" secondAttribute="bottom" constant="3" id="dOe-HG-Wat"/>
                                                 <constraint firstItem="SXK-qC-L3i" firstAttribute="centerY" secondItem="NI8-dV-p8K" secondAttribute="centerY" id="kvT-Ze-jD3"/>
                                                 <constraint firstItem="iv8-6M-ELZ" firstAttribute="leading" secondItem="NI8-dV-p8K" secondAttribute="leading" id="lCq-Tl-ace"/>
-                                                <constraint firstItem="iv8-6M-ELZ" firstAttribute="top" secondItem="NI8-dV-p8K" secondAttribute="top" id="sQ7-WQ-TZo"/>
+                                                <constraint firstItem="iv8-6M-ELZ" firstAttribute="top" secondItem="NI8-dV-p8K" secondAttribute="top" constant="3" id="vGN-Ub-gyI"/>
                                                 <constraint firstItem="SXK-qC-L3i" firstAttribute="centerX" secondItem="NI8-dV-p8K" secondAttribute="centerX" id="xcs-0s-px5"/>
                                             </constraints>
                                         </tableViewCellContentView>
