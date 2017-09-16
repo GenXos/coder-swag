@@ -25,10 +25,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5o-dB-dJr">
-                                <rect key="frame" x="20" y="30" width="168" height="23.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="168" id="lck-h8-pn7"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="30" width="165" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,25 +91,24 @@
                     <navigationItem key="navigationItem" title="CODERSWAG" id="vSh-lH-9rc"/>
                     <connections>
                         <outlet property="categoryTable" destination="abw-nv-d5q" id="CsD-59-QI3"/>
-                        <segue destination="yIo-3J-mXG" kind="show" id="1Ew-PH-Jwm"/>
+                        <segue destination="yIo-3J-mXG" kind="show" identifier="ProductsVC" id="1Ew-PH-Jwm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="965.60000000000002" y="476.31184407796104"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="5P7-9n-fC0">
             <objects>
-                <viewController id="yIo-3J-mXG" sceneMemberID="viewController">
+                <viewController id="yIo-3J-mXG" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XEx-bL-Bru">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dM-PR-1hS">
-                                <rect key="frame" x="16" y="30" width="168" height="23.5"/>
+                                <rect key="frame" x="16" y="30" width="89.5" height="23.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="168" id="MDt-7b-QmN"/>
                                     <constraint firstAttribute="height" constant="23.5" id="vNc-C4-af0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
@@ -129,7 +125,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bkX-gY-fxJ" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="bkX-gY-fxJ" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="265"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -194,6 +190,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Akk-KP-Uz6"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="LCQ-hi-KcT" id="b6c-p5-mG1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMZ-SA-NND" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
